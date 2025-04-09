@@ -37,3 +37,23 @@ function updateTimer() {
 // Update the timer every second
 setInterval(updateTimer, 1000);
 updateTimer();
+
+const messages = [
+  "Я люблю тебе більше 😝",
+  "Точно більше",
+  "100%",
+  "Больсе Больсе Больсе",
+  "ЯЯЯЯЯ",
+  "Цьом 💋",
+];
+
+let messageIndex = 0;
+
+function handleNoClick() {
+  const noButton = document.querySelector('.no-button');
+  const yesButton = document.querySelector('.yes-button');
+  noButton.textContent = messages[messageIndex];
+  messageIndex = (messageIndex + 1) % messages.length;
+  const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
+  yesButton.style.fontSize = `${currentSize * 1.5}px`;
+}

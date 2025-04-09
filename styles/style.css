@@ -10,7 +10,7 @@ body {
   }
   
   h1, #timer {
-    font-size: 1.7rem; /* Match the size of the h1 */
+    font-size: 1.6rem; /* Match the size of the h1 */
     color: #ff6b6b; /* Match the color of the h1 */
     margin: 0px 2px;
     font-weight: normal; /* Optional: Match the font weight */
@@ -28,7 +28,7 @@ body {
 
 
   .gif_container img {
-    height: 180px; /* Adjust the height as needed */
+    height: 160px; /* Adjust the height as needed */
     width: auto; /* Maintain aspect ratio */
 }
 
@@ -75,6 +75,21 @@ body {
     top: 0;
   }
   
+  .buttons {
+    margin-bottom: 10px;
+  }
+  
+  .no-button {
+    font-size: 1.5em;
+    font-family: 'Pacifico', cursive;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
   @keyframes pulse {
     0%, 100% {
       transform: scale(1) rotate(-45deg);
