@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fef3f3;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  h1, #timer {
+    font-size: 2rem; /* Match the size of the h1 */
+    color: #ff6b6b; /* Match the color of the h1 */
+    margin: 10px 0;
+    font-weight: normal; /* Optional: Match the font weight */
+    text-align: center; /* Ensure alignment matches */
+  }
+  
+  .images img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    text-align: center;
+    position: relative;
+  }
+  
+  .animation {
+    position: relative; /* Change to relative to position it within the container */
+    margin-bottom: 50px; /* Add spacing between the heart and the text */
+  }
+  
+  .heart {
+    position: relative; /* Ensure the heart stays within the container */
+    display: inline-block; /* Center the heart */
+    top: 0; /* Reset any offsets */
+    left: 0; /* Reset any offsets */
+    width: 100px;
+    height: 90px;
+    background: #ff6b6b;
+    transform: rotate(-45deg);
+    animation: pulse 1.5s infinite;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    background: #ff6b6b;
+    border-radius: 50%;
+  }
+  
+  .heart::before {
+    top: -50px;
+    left: 0;
+  }
+  
+  .heart::after {
+    left: 50px;
+    top: 0;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(1.2) rotate(-45deg);
+    }
+  }
