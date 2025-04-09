@@ -11,7 +11,7 @@ body {
   }
   
   h1, #timer {
-    font-size: 2rem; /* Match the size of the h1 */
+    font-size: 1.7rem; /* Match the size of the h1 */
     color: #ff6b6b; /* Match the color of the h1 */
     margin: 10px 0;
     font-weight: normal; /* Optional: Match the font weight */
