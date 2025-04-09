@@ -27,8 +27,8 @@ function updateTimer() {
   // Формати для числівників
   const monthsText = getPluralForm(months, ['місяць', 'місяці', 'місяців']);
   const daysText = getPluralForm(days, ['день', 'дні', 'днів']);
-  const hoursText = getPluralForm(hours, ['година', 'години', 'годин']);
-  const minutesText = getPluralForm(minutes, ['хвилина', 'хвилини', 'хвилин']);
+  const hoursText = getPluralForm(hours, ['годину', 'години', 'годин']);
+  const minutesText = getPluralForm(minutes, ['хвилину', 'хвилини', 'хвилин']);
   const secondsText = getPluralForm(seconds, ['секунду', 'секунди', 'секунд']);
 
   timerElement.textContent = `${months} ${monthsText}, ${days} ${daysText}, ${hours} ${hoursText}, ${minutes} ${minutesText} і ${seconds} ${secondsText}`;

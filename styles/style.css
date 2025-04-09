@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #fef3f3;
+    background: #f9e3e3;
     font-family: Arial, sans-serif;
     overflow: hidden;
   }
@@ -34,6 +34,7 @@ body {
   .animation {
     position: relative; /* Change to relative to position it within the container */
     margin-bottom: 50px; /* Add spacing between the heart and the text */
+    margin-top: 75px; /* Add spacing between the heart and the text */
   }
   
   .heart {
