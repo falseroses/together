@@ -13,7 +13,7 @@ function updateTimer() {
   const minutes = Math.floor((diffInSeconds % (60 * 60)) / 60);
   const seconds = diffInSeconds % 60;
 
-  timerElement.textContent = `${months} місяців, ${days} днів, ${hours} годин, ${minutes} хвилин, ${seconds} секунди`;
+  timerElement.textContent = `${months} місяців, ${days} день, ${hours} години, ${minutes} хвилин і ${seconds} секунди`;
 }
 
 // Update the timer every second
