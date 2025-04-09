@@ -5,11 +5,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('background.jpg') no-repeat center center fixed; /* Add background image */
-    background-size: cover; /* Ensure the image covers the entire viewport */
+    background: #fef3f3;
     font-family: Arial, sans-serif;
     overflow: hidden;
-}
+  }
   
   h1, #timer {
     font-size: 1.7rem; /* Match the size of the h1 */
